@@ -6,7 +6,7 @@ export class SingletonService
 
     constructor() {
         if (!SingletonService.isCreating) {
-            throw new Error("You can't call new in Singleton instances!");
+            throw new Error("You can't call new in Singleton instances! Call SingletonService.getInstance() instead.");
         }
     }
 
