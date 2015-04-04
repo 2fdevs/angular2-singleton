@@ -1,8 +1,8 @@
 export class SingletonService
 {
     message:String;
-    private static instance:SingletonService;
-    private static isCreating:Boolean = false;
+    static instance:SingletonService;
+    static isCreating:Boolean = false;
 
     constructor() {
         if (!SingletonService.isCreating) {
