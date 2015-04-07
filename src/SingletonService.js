@@ -1,8 +1,8 @@
 export class SingletonService
 {
-    message:String;
+    message:string;
     static instance:SingletonService;
-    static isCreating:Boolean = false;
+    static isCreating:boolean = false;
 
     constructor() {
         if (!SingletonService.isCreating) {
@@ -20,7 +20,7 @@ export class SingletonService
         return SingletonService.instance;
     }
 
-    setMessage(message:String) {
+    setMessage(message:string) {
         this.message = message;
     }
 

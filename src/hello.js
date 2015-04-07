@@ -9,7 +9,7 @@ import {SingletonService} from 'SingletonService';
     directives: [If]
 })
 export class Hello {
-    name:String = 'World';
+    name:string = 'World';
 
     constructor() {
         setTimeout(() => {
